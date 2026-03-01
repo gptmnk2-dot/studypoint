@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class 9 Science ICT Tabs</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+}
+
+.chapter {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px gray;
+}
+
+.tabs {
+    display: none;
+    margin-top: 10px;
+}
+
+.tab-buttons button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    background: #ecf0f1;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+</style>
+
+<script>
+function toggleTabs(id) {
+    var x = document.getElementById(id);
+    x.style.display = x.style.display === "block" ? "none" : "block";
+}
+
+function openTab(tabId) {
+    var contents = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
+    document.getElementById(tabId).style.display = "block";
+}
+</script>
+</head>
+
+<body>
+
+<h1>Class 9 Science - Interactive ICT File</h1>
+
+<!-- Chapters List -->
+
+<div class="chapter" onclick="toggleTabs('ch1')">
+1. Matter in Our Surroundings
+<div class="tabs" id="ch1">
+<div class="tab-buttons">
+<button onclick="openTab('quiz1')">Quiz</button>
+<button onclick="openTab('video1')">Video</button>
+<button onclick="openTab('notes1')">Chapter</button>
+</div>
+
+<div class="tab-content" id="quiz1">
+<p>Q1. What are the three states of matter?</p>
+</div>
+
+<div class="tab-content" id="video1">
+<a href="https://www.youtube.com/YOUR_VIDEO_LINK1" target="_blank">
+Click Here to Watch Video
+</a>
+</div>
+
+<div class="tab-content" id="notes1">
+<p>Short notes about the chapter...</p>
+</div>
+</div>
+</div>
+
+
+<div class="chapter" onclick="toggleTabs('ch2')">
+2. Is Matter Around Us Pure?
+<div class="tabs" id="ch2">
+<div class="tab-buttons">
+<button onclick="openTab('quiz2')">Quiz</button>
+<button onclick="openTab('video2')">Video</button>
+<button onclick="openTab('notes2')">Chapter</button>
+</div>
+
+<div class="tab-content" id="quiz2">
+<p>Q1. What is a mixture?</p>
+</div>
+
+<div class="tab-content" id="video2">
+<a href="https://www.youtube.com/YOUR_VIDEO_LINK2" target="_blank">
+Click Here to Watch Video
+</a>
+</div>
+
+<div class="tab-content" id="notes2">
+<p>Short notes about the chapter...</p>
+</div>
+</div>
+</div>
+
+
+<div class="chapter" onclick="toggleTabs('ch3')">
+3. Atoms and Molecules
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch4')">
+4. Structure of the Atom
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch5')">
+5. The Fundamental Unit of Life
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch6')">
+6. Tissues
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch7')">
+7. Motion
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch8')">
+8. Force and Laws of Motion
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch9')">
+9. Gravitation
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch10')">
+10. Work and Energy
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch11')">
+11. Sound
+</div>
+
+<div class="chapter" onclick="toggleTabs('ch12')">
+12. Improvement in Food Resources
+</div>
+
+</body>
+</html>
